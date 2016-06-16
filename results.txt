@@ -1,0 +1,525 @@
+Running org.openjdk.jmh.Main -wi 10 -i 10 -f2 -t2
+# JMH 1.10.3 (released 335 days ago, please consider updating!)
+# VM version: JDK 1.8.0_92, VM 25.92-b14
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: benchmark.DecodeTest.circleJackson
+
+# Run progress: 0.00% complete, ETA 00:05:20
+# Fork: 1 of 2
+# Warmup Iteration   1: 1125.105 ops/s
+# Warmup Iteration   2: 9073.930 ops/s
+# Warmup Iteration   3: 9906.740 ops/s
+# Warmup Iteration   4: 16502.901 ops/s
+# Warmup Iteration   5: 18486.682 ops/s
+# Warmup Iteration   6: 18266.009 ops/s
+# Warmup Iteration   7: 18039.348 ops/s
+# Warmup Iteration   8: 18366.774 ops/s
+# Warmup Iteration   9: 18461.023 ops/s
+# Warmup Iteration  10: 18243.092 ops/s
+Iteration   1: 18223.474 ops/s
+Iteration   2: 18292.841 ops/s
+Iteration   3: 18266.129 ops/s
+Iteration   4: 18361.830 ops/s
+Iteration   5: 17345.340 ops/s
+Iteration   6: 17979.147 ops/s
+Iteration   7: 18361.094 ops/s
+Iteration   8: 17856.412 ops/s
+Iteration   9: 18450.703 ops/s
+Iteration  10: 17918.215 ops/s
+
+# Run progress: 6.25% complete, ETA 00:05:14
+# Fork: 2 of 2
+# Warmup Iteration   1: 820.228 ops/s
+# Warmup Iteration   2: 9462.917 ops/s
+# Warmup Iteration   3: 12810.756 ops/s
+# Warmup Iteration   4: 18639.773 ops/s
+# Warmup Iteration   5: 18386.258 ops/s
+# Warmup Iteration   6: 18406.666 ops/s
+# Warmup Iteration   7: 17999.212 ops/s
+# Warmup Iteration   8: 18523.374 ops/s
+# Warmup Iteration   9: 19115.277 ops/s
+# Warmup Iteration  10: 18480.082 ops/s
+Iteration   1: 18660.228 ops/s
+Iteration   2: 18387.057 ops/s
+Iteration   3: 18622.586 ops/s
+Iteration   4: 18385.870 ops/s
+Iteration   5: 18302.490 ops/s
+Iteration   6: 14776.541 ops/s
+Iteration   7: 18087.880 ops/s
+Iteration   8: 18635.624 ops/s
+Iteration   9: 18535.842 ops/s
+Iteration  10: 18398.276 ops/s
+
+
+Result "circleJackson":
+  18092.379 ±(99.9%) 729.748 ops/s [Average]
+  (min, avg, max) = (14776.541, 18092.379, 18660.228), stdev = 840.379
+  CI (99.9%): [17362.631, 18822.127] (assumes normal distribution)
+
+
+# JMH 1.10.3 (released 335 days ago, please consider updating!)
+# VM version: JDK 1.8.0_92, VM 25.92-b14
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: benchmark.DecodeTest.circleJawn
+
+# Run progress: 12.50% complete, ETA 00:04:53
+# Fork: 1 of 2
+# Warmup Iteration   1: 1298.817 ops/s
+# Warmup Iteration   2: 11022.726 ops/s
+# Warmup Iteration   3: 14759.623 ops/s
+# Warmup Iteration   4: 18349.944 ops/s
+# Warmup Iteration   5: 18586.723 ops/s
+# Warmup Iteration   6: 17350.785 ops/s
+# Warmup Iteration   7: 17688.883 ops/s
+# Warmup Iteration   8: 18732.476 ops/s
+# Warmup Iteration   9: 18729.558 ops/s
+# Warmup Iteration  10: 17821.434 ops/s
+Iteration   1: 18348.176 ops/s
+Iteration   2: 18753.350 ops/s
+Iteration   3: 18555.842 ops/s
+Iteration   4: 18864.702 ops/s
+Iteration   5: 18700.060 ops/s
+Iteration   6: 18608.521 ops/s
+Iteration   7: 18721.894 ops/s
+Iteration   8: 18554.654 ops/s
+Iteration   9: 18595.369 ops/s
+Iteration  10: 18514.957 ops/s
+
+# Run progress: 18.75% complete, ETA 00:04:31
+# Fork: 2 of 2
+# Warmup Iteration   1: 1194.152 ops/s
+# Warmup Iteration   2: 10171.087 ops/s
+# Warmup Iteration   3: 14989.469 ops/s
+# Warmup Iteration   4: 18892.786 ops/s
+# Warmup Iteration   5: 19319.022 ops/s
+# Warmup Iteration   6: 19167.618 ops/s
+# Warmup Iteration   7: 18975.526 ops/s
+# Warmup Iteration   8: 19188.473 ops/s
+# Warmup Iteration   9: 19205.130 ops/s
+# Warmup Iteration  10: 18609.799 ops/s
+Iteration   1: 19333.393 ops/s
+Iteration   2: 19359.085 ops/s
+Iteration   3: 19711.932 ops/s
+Iteration   4: 18048.942 ops/s
+Iteration   5: 18883.763 ops/s
+Iteration   6: 18642.516 ops/s
+Iteration   7: 19190.810 ops/s
+Iteration   8: 19439.894 ops/s
+Iteration   9: 19170.146 ops/s
+Iteration  10: 18845.141 ops/s
+
+
+Result "circleJawn":
+  18842.157 ±(99.9%) 356.171 ops/s [Average]
+  (min, avg, max) = (18048.942, 18842.157, 19711.932), stdev = 410.167
+  CI (99.9%): [18485.987, 19198.328] (assumes normal distribution)
+
+
+# JMH 1.10.3 (released 335 days ago, please consider updating!)
+# VM version: JDK 1.8.0_92, VM 25.92-b14
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: benchmark.DecodeTest.jacksonDecode
+
+# Run progress: 25.00% complete, ETA 00:04:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 3103.436 ops/s
+# Warmup Iteration   2: 18432.085 ops/s
+# Warmup Iteration   3: 22069.262 ops/s
+# Warmup Iteration   4: 21990.319 ops/s
+# Warmup Iteration   5: 24223.411 ops/s
+# Warmup Iteration   6: 24878.343 ops/s
+# Warmup Iteration   7: 24292.024 ops/s
+# Warmup Iteration   8: 24703.761 ops/s
+# Warmup Iteration   9: 24727.468 ops/s
+# Warmup Iteration  10: 24647.440 ops/s
+Iteration   1: 24790.822 ops/s
+Iteration   2: 24447.291 ops/s
+Iteration   3: 24386.014 ops/s
+Iteration   4: 24177.524 ops/s
+Iteration   5: 24328.069 ops/s
+Iteration   6: 24153.873 ops/s
+Iteration   7: 24623.020 ops/s
+Iteration   8: 24160.001 ops/s
+Iteration   9: 24238.936 ops/s
+Iteration  10: 23648.790 ops/s
+
+# Run progress: 31.25% complete, ETA 00:03:49
+# Fork: 2 of 2
+# Warmup Iteration   1: 2268.446 ops/s
+# Warmup Iteration   2: 16242.936 ops/s
+# Warmup Iteration   3: 21389.809 ops/s
+# Warmup Iteration   4: 20688.539 ops/s
+# Warmup Iteration   5: 24590.123 ops/s
+# Warmup Iteration   6: 24477.512 ops/s
+# Warmup Iteration   7: 25051.620 ops/s
+# Warmup Iteration   8: 24644.587 ops/s
+# Warmup Iteration   9: 23825.043 ops/s
+# Warmup Iteration  10: 24698.155 ops/s
+Iteration   1: 24211.998 ops/s
+Iteration   2: 24122.662 ops/s
+Iteration   3: 24859.009 ops/s
+Iteration   4: 24361.328 ops/s
+Iteration   5: 24776.965 ops/s
+Iteration   6: 24817.948 ops/s
+Iteration   7: 24339.357 ops/s
+Iteration   8: 24413.569 ops/s
+Iteration   9: 24868.262 ops/s
+Iteration  10: 24445.209 ops/s
+
+
+Result "jacksonDecode":
+  24408.532 ±(99.9%) 269.711 ops/s [Average]
+  (min, avg, max) = (23648.790, 24408.532, 24868.262), stdev = 310.599
+  CI (99.9%): [24138.822, 24678.243] (assumes normal distribution)
+
+
+# JMH 1.10.3 (released 335 days ago, please consider updating!)
+# VM version: JDK 1.8.0_92, VM 25.92-b14
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: benchmark.DecodeTest.jacksonRead
+
+# Run progress: 37.50% complete, ETA 00:03:28
+# Fork: 1 of 2
+# Warmup Iteration   1: 2240.105 ops/s
+# Warmup Iteration   2: 16846.091 ops/s
+# Warmup Iteration   3: 22209.536 ops/s
+# Warmup Iteration   4: 22407.082 ops/s
+# Warmup Iteration   5: 24690.375 ops/s
+# Warmup Iteration   6: 24649.941 ops/s
+# Warmup Iteration   7: 24615.017 ops/s
+# Warmup Iteration   8: 24567.646 ops/s
+# Warmup Iteration   9: 24541.398 ops/s
+# Warmup Iteration  10: 24894.922 ops/s
+Iteration   1: 24335.279 ops/s
+Iteration   2: 24319.869 ops/s
+Iteration   3: 22265.670 ops/s
+Iteration   4: 24697.952 ops/s
+Iteration   5: 24530.344 ops/s
+Iteration   6: 25043.429 ops/s
+Iteration   7: 23542.374 ops/s
+Iteration   8: 24744.246 ops/s
+Iteration   9: 24144.760 ops/s
+Iteration  10: 24831.985 ops/s
+
+# Run progress: 43.75% complete, ETA 00:03:07
+# Fork: 2 of 2
+# Warmup Iteration   1: 2924.030 ops/s
+# Warmup Iteration   2: 16298.392 ops/s
+# Warmup Iteration   3: 22085.335 ops/s
+# Warmup Iteration   4: 22166.939 ops/s
+# Warmup Iteration   5: 24607.231 ops/s
+# Warmup Iteration   6: 24906.672 ops/s
+# Warmup Iteration   7: 24745.424 ops/s
+# Warmup Iteration   8: 24747.092 ops/s
+# Warmup Iteration   9: 24541.700 ops/s
+# Warmup Iteration  10: 24761.911 ops/s
+Iteration   1: 23688.797 ops/s
+Iteration   2: 23813.136 ops/s
+Iteration   3: 24523.144 ops/s
+Iteration   4: 24543.290 ops/s
+Iteration   5: 24037.855 ops/s
+Iteration   6: 23553.585 ops/s
+Iteration   7: 22286.485 ops/s
+Iteration   8: 24356.818 ops/s
+Iteration   9: 24197.984 ops/s
+Iteration  10: 23795.315 ops/s
+
+
+Result "jacksonRead":
+  24062.616 ±(99.9%) 646.257 ops/s [Average]
+  (min, avg, max) = (22265.670, 24062.616, 25043.429), stdev = 744.231
+  CI (99.9%): [23416.359, 24708.873] (assumes normal distribution)
+
+
+# JMH 1.10.3 (released 335 days ago, please consider updating!)
+# VM version: JDK 1.8.0_92, VM 25.92-b14
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: benchmark.ParseTest.circleJackson
+
+# Run progress: 50.00% complete, ETA 00:02:46
+# Fork: 1 of 2
+# Warmup Iteration   1: 1113.145 ops/s
+# Warmup Iteration   2: 11446.184 ops/s
+# Warmup Iteration   3: 12630.893 ops/s
+# Warmup Iteration   4: 19067.930 ops/s
+# Warmup Iteration   5: 19493.531 ops/s
+# Warmup Iteration   6: 18505.391 ops/s
+# Warmup Iteration   7: 19459.520 ops/s
+# Warmup Iteration   8: 19504.723 ops/s
+# Warmup Iteration   9: 18945.877 ops/s
+# Warmup Iteration  10: 19175.102 ops/s
+Iteration   1: 19399.344 ops/s
+Iteration   2: 19446.801 ops/s
+Iteration   3: 19765.444 ops/s
+Iteration   4: 19358.854 ops/s
+Iteration   5: 19334.058 ops/s
+Iteration   6: 18944.132 ops/s
+Iteration   7: 18472.706 ops/s
+Iteration   8: 19858.548 ops/s
+Iteration   9: 19393.972 ops/s
+Iteration  10: 19272.332 ops/s
+
+# Run progress: 56.25% complete, ETA 00:02:25
+# Fork: 2 of 2
+# Warmup Iteration   1: 1661.457 ops/s
+# Warmup Iteration   2: 13328.448 ops/s
+# Warmup Iteration   3: 17020.951 ops/s
+# Warmup Iteration   4: 18882.409 ops/s
+# Warmup Iteration   5: 18357.863 ops/s
+# Warmup Iteration   6: 19544.868 ops/s
+# Warmup Iteration   7: 19587.343 ops/s
+# Warmup Iteration   8: 19758.561 ops/s
+# Warmup Iteration   9: 19815.557 ops/s
+# Warmup Iteration  10: 18265.136 ops/s
+Iteration   1: 18729.190 ops/s
+Iteration   2: 19615.988 ops/s
+Iteration   3: 19812.561 ops/s
+Iteration   4: 19689.507 ops/s
+Iteration   5: 19748.944 ops/s
+Iteration   6: 19292.588 ops/s
+Iteration   7: 19320.671 ops/s
+Iteration   8: 19592.186 ops/s
+Iteration   9: 19473.018 ops/s
+Iteration  10: 19358.481 ops/s
+
+
+Result "circleJackson":
+  19393.966 ±(99.9%) 306.660 ops/s [Average]
+  (min, avg, max) = (18472.706, 19393.966, 19858.548), stdev = 353.150
+  CI (99.9%): [19087.306, 19700.626] (assumes normal distribution)
+
+
+# JMH 1.10.3 (released 335 days ago, please consider updating!)
+# VM version: JDK 1.8.0_92, VM 25.92-b14
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: benchmark.ParseTest.circleJawn
+
+# Run progress: 62.50% complete, ETA 00:02:05
+# Fork: 1 of 2
+# Warmup Iteration   1: 1407.758 ops/s
+# Warmup Iteration   2: 14238.612 ops/s
+# Warmup Iteration   3: 17818.815 ops/s
+# Warmup Iteration   4: 19605.795 ops/s
+# Warmup Iteration   5: 19564.573 ops/s
+# Warmup Iteration   6: 19149.742 ops/s
+# Warmup Iteration   7: 19625.515 ops/s
+# Warmup Iteration   8: 19086.983 ops/s
+# Warmup Iteration   9: 19448.133 ops/s
+# Warmup Iteration  10: 19746.483 ops/s
+Iteration   1: 19137.690 ops/s
+Iteration   2: 18965.625 ops/s
+Iteration   3: 19471.819 ops/s
+Iteration   4: 19610.688 ops/s
+Iteration   5: 18999.198 ops/s
+Iteration   6: 19291.551 ops/s
+Iteration   7: 19487.616 ops/s
+Iteration   8: 17580.709 ops/s
+Iteration   9: 15361.324 ops/s
+Iteration  10: 15008.692 ops/s
+
+# Run progress: 68.75% complete, ETA 00:01:44
+# Fork: 2 of 2
+# Warmup Iteration   1: 1388.317 ops/s
+# Warmup Iteration   2: 14745.091 ops/s
+# Warmup Iteration   3: 14878.587 ops/s
+# Warmup Iteration   4: 16879.068 ops/s
+# Warmup Iteration   5: 19828.008 ops/s
+# Warmup Iteration   6: 20002.498 ops/s
+# Warmup Iteration   7: 18939.794 ops/s
+# Warmup Iteration   8: 19578.762 ops/s
+# Warmup Iteration   9: 19590.848 ops/s
+# Warmup Iteration  10: 19850.683 ops/s
+Iteration   1: 19082.603 ops/s
+Iteration   2: 19713.198 ops/s
+Iteration   3: 19766.094 ops/s
+Iteration   4: 19462.839 ops/s
+Iteration   5: 19166.277 ops/s
+Iteration   6: 19344.455 ops/s
+Iteration   7: 19426.320 ops/s
+Iteration   8: 18956.977 ops/s
+Iteration   9: 18591.385 ops/s
+Iteration  10: 17300.499 ops/s
+
+
+Result "circleJawn":
+  18686.278 ±(99.9%) 1176.154 ops/s [Average]
+  (min, avg, max) = (15008.692, 18686.278, 19766.094), stdev = 1354.460
+  CI (99.9%): [17510.124, 19862.432] (assumes normal distribution)
+
+
+# JMH 1.10.3 (released 335 days ago, please consider updating!)
+# VM version: JDK 1.8.0_92, VM 25.92-b14
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: benchmark.ParseTest.jackson
+
+# Run progress: 75.00% complete, ETA 00:01:23
+# Fork: 1 of 2
+# Warmup Iteration   1: 3069.307 ops/s
+# Warmup Iteration   2: 21788.751 ops/s
+# Warmup Iteration   3: 24565.316 ops/s
+# Warmup Iteration   4: 24453.055 ops/s
+# Warmup Iteration   5: 26592.853 ops/s
+# Warmup Iteration   6: 27145.718 ops/s
+# Warmup Iteration   7: 26998.999 ops/s
+# Warmup Iteration   8: 24652.559 ops/s
+# Warmup Iteration   9: 27178.279 ops/s
+# Warmup Iteration  10: 26415.273 ops/s
+Iteration   1: 26644.999 ops/s
+Iteration   2: 26871.889 ops/s
+Iteration   3: 26602.605 ops/s
+Iteration   4: 26491.748 ops/s
+Iteration   5: 26496.165 ops/s
+Iteration   6: 26151.233 ops/s
+Iteration   7: 26565.348 ops/s
+Iteration   8: 26105.541 ops/s
+Iteration   9: 25750.601 ops/s
+Iteration  10: 26249.678 ops/s
+
+# Run progress: 81.25% complete, ETA 00:01:02
+# Fork: 2 of 2
+# Warmup Iteration   1: 2782.554 ops/s
+# Warmup Iteration   2: 22141.779 ops/s
+# Warmup Iteration   3: 24329.113 ops/s
+# Warmup Iteration   4: 23810.624 ops/s
+# Warmup Iteration   5: 26528.823 ops/s
+# Warmup Iteration   6: 25421.247 ops/s
+# Warmup Iteration   7: 25986.574 ops/s
+# Warmup Iteration   8: 26306.451 ops/s
+# Warmup Iteration   9: 26380.937 ops/s
+# Warmup Iteration  10: 26573.066 ops/s
+Iteration   1: 26381.969 ops/s
+Iteration   2: 26027.133 ops/s
+Iteration   3: 26372.544 ops/s
+Iteration   4: 26795.164 ops/s
+Iteration   5: 26215.607 ops/s
+Iteration   6: 26227.631 ops/s
+Iteration   7: 25836.571 ops/s
+Iteration   8: 25147.118 ops/s
+Iteration   9: 26398.286 ops/s
+Iteration  10: 25772.969 ops/s
+
+
+Result "jackson":
+  26255.240 ±(99.9%) 355.410 ops/s [Average]
+  (min, avg, max) = (25147.118, 26255.240, 26871.889), stdev = 409.291
+  CI (99.9%): [25899.829, 26610.650] (assumes normal distribution)
+
+
+# JMH 1.10.3 (released 335 days ago, please consider updating!)
+# VM version: JDK 1.8.0_92, VM 25.92-b14
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: benchmark.ParseTest.jacksonMapper
+
+# Run progress: 87.50% complete, ETA 00:00:41
+# Fork: 1 of 2
+# Warmup Iteration   1: 222.747 ops/s
+# Warmup Iteration   2: 1062.152 ops/s
+# Warmup Iteration   3: 1999.967 ops/s
+# Warmup Iteration   4: 2002.882 ops/s
+# Warmup Iteration   5: 2485.190 ops/s
+# Warmup Iteration   6: 2688.702 ops/s
+# Warmup Iteration   7: 3608.019 ops/s
+# Warmup Iteration   8: 4220.480 ops/s
+# Warmup Iteration   9: 4585.572 ops/s
+# Warmup Iteration  10: 5264.656 ops/s
+Iteration   1: 5057.465 ops/s
+Iteration   2: 5149.495 ops/s
+Iteration   3: 5255.564 ops/s
+Iteration   4: 5200.267 ops/s
+Iteration   5: 5133.947 ops/s
+Iteration   6: 5172.155 ops/s
+Iteration   7: 5174.631 ops/s
+Iteration   8: 5142.327 ops/s
+Iteration   9: 5095.941 ops/s
+Iteration  10: 5264.503 ops/s
+
+# Run progress: 93.75% complete, ETA 00:00:20
+# Fork: 2 of 2
+# Warmup Iteration   1: 157.116 ops/s
+# Warmup Iteration   2: 999.187 ops/s
+# Warmup Iteration   3: 1944.440 ops/s
+# Warmup Iteration   4: 2096.143 ops/s
+# Warmup Iteration   5: 3231.445 ops/s
+# Warmup Iteration   6: 4309.760 ops/s
+# Warmup Iteration   7: 4625.786 ops/s
+# Warmup Iteration   8: 5137.141 ops/s
+# Warmup Iteration   9: 5170.773 ops/s
+# Warmup Iteration  10: 5030.934 ops/s
+Iteration   1: 5177.314 ops/s
+Iteration   2: 5115.629 ops/s
+Iteration   3: 5025.931 ops/s
+Iteration   4: 5251.697 ops/s
+Iteration   5: 5088.439 ops/s
+Iteration   6: 5283.253 ops/s
+Iteration   7: 4772.153 ops/s
+Iteration   8: 5278.974 ops/s
+Iteration   9: 5230.968 ops/s
+Iteration  10: 5169.450 ops/s
+
+
+Result "jacksonMapper":
+  5152.005 ±(99.9%) 100.627 ops/s [Average]
+  (min, avg, max) = (4772.153, 5152.005, 5283.253), stdev = 115.882
+  CI (99.9%): [5051.378, 5252.632] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:05:33
+
+Benchmark                  Mode  Cnt      Score      Error  Units
+DecodeTest.circleJackson  thrpt   20  18092.379 ±  729.748  ops/s
+DecodeTest.circleJawn     thrpt   20  18842.157 ±  356.171  ops/s
+DecodeTest.jacksonDecode  thrpt   20  24408.532 ±  269.711  ops/s
+DecodeTest.jacksonRead    thrpt   20  24062.616 ±  646.257  ops/s
+ParseTest.circleJackson   thrpt   20  19393.966 ±  306.660  ops/s
+ParseTest.circleJawn      thrpt   20  18686.278 ± 1176.154  ops/s
+ParseTest.jackson         thrpt   20  26255.240 ±  355.410  ops/s
+ParseTest.jacksonMapper   thrpt   20   5152.005 ±  100.627  ops/s
+[success] Total time: 369 s, completed 16/06/2016 9:15:47 PM
