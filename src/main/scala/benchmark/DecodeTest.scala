@@ -23,4 +23,29 @@ class DecodeTest {
   def jacksonDecode(): Unit = {
     JacksonTest.read()
   }
+
+  @Benchmark
+  def sprayDecode(): Unit = {
+    SprayJsonTest.decode()
+  }
+
+  @Benchmark
+  def sprayInvalidDecode(): Unit = {
+    SprayJsonTest.invalidDecode()
+  }
+
+  @Benchmark
+  def argonautDecode(): Unit = {
+    ArgonautTest.decode()
+  }
+
+  @Benchmark
+  def argonautInvalidDecode(): Unit = {
+    ArgonautTest.decodeInvalid()
+  }
+
+  @Benchmark
+  def argonautValDecode(): Unit = {
+    ArgonautTest.decodeVal()
+  }
 }

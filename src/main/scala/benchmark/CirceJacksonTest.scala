@@ -1,7 +1,6 @@
 package benchmark
 
 import io.circe._, io.circe.generic.auto._, io.circe.jackson, io.circe.syntax._
-import cats.data.Xor
 
 object CirceJacksonTest {
 

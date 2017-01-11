@@ -4,7 +4,6 @@ import io.circe._
 import io.circe.generic.auto._
 import io.circe.jawn
 import io.circe.syntax._
-import cats.data.Xor
 
 object CirceJawnTest {
 

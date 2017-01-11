@@ -48,8 +48,8 @@ object JacksonTest {
       `registered` = map.get("registered").get.asInstanceOf[String],
       `latitude` = map.get("latitude").get.asInstanceOf[Double],
       `longitude` = map.get("longitude").get.asInstanceOf[Double],
-      `tags` = map.get("tags").get.asInstanceOf[Seq[String]],
-      `friends` = map.get("friends").get.asInstanceOf[Seq[Map[String,Any]]].map(readFriend),
+      `tags` = map.get("tags").get.asInstanceOf[List[String]],
+      `friends` = map.get("friends").get.asInstanceOf[List[Map[String,Any]]].map(readFriend),
       `greeting` = map.get("greeting").get.asInstanceOf[String],
       `favoriteFruit` = map.get("favoriteFruit").get.asInstanceOf[String])
   }

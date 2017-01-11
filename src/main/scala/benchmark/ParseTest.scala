@@ -23,4 +23,14 @@ class ParseTest {
   def jacksonMapper(): Unit = {
     JacksonTest.parseNewMapper()
   }
+
+  @Benchmark
+  def spray(): Unit = {
+    SprayJsonTest.parse()
+  }
+
+  @Benchmark
+  def argonaut(): Unit = {
+    ArgonautTest.parse()
+  }
 }
