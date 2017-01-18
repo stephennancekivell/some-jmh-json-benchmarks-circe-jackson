@@ -1,5 +1,6 @@
 package benchmark
 
+import benchmark.Data.Type
 import io.circe._
 import io.circe.generic.auto._
 import io.circe.jawn
@@ -11,8 +12,9 @@ object CirceJawnTest {
     val doc = jawn.parse(Data.json)
   }
 
-  def decode():Unit = {
-    jawn.decode[Data.Type](Data.json)
+  private val decoder = implicitly[Decoder[Data.Type]]
+  def decode(): Either[Error, Type] = {
+    jawn.decode[Data.Type](Data.json)(decoder)
   }
 
 }

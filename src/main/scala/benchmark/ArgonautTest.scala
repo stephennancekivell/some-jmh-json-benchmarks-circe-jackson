@@ -1,20 +1,17 @@
 package benchmark
 
-import argonaut._, Argonaut._
-
+import argonaut._
+import Argonaut._
 import DecodeJson._
+
+import scalaz.\/
 
 object ArgonautTest {
   def parse(): Unit = {
     Data.json.parse
   }
 
-  def decode(): Unit = {
-    import ArgonautCodecs.DataCodecJson
-    Data.json.decode[Data.Type]
-  }
-
-  def decodeVal(): Unit = {
+  def decode(): \/[\/[String, (String, CursorHistory)], Data.Type] = {
     Data.json.decode[Data.Type](ArgonautCodecs.DataCodecJsonVal)
   }
 
@@ -55,4 +52,12 @@ object ArgonautCodecs {
 
   val DataCodecJsonVal: CodecJson[Data.Type] =
     DataCodecJson
+}
+
+object ArgonautShapelessTest {
+  import ArgonautShapeless._
+  val enc = DecodeJson.of[Data.Type]
+  def decode(): \/[\/[String, (String, CursorHistory)], Data.Type] = {
+    Data.json.decode[Data.Type](enc)
+  }
 }

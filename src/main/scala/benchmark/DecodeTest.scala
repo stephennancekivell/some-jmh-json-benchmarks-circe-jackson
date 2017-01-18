@@ -5,33 +5,28 @@ import org.openjdk.jmh.annotations._
 class DecodeTest {
 
   @Benchmark
-  def circleJawn(): Unit = {
-    CirceJacksonTest.decode()
+  def circeJawn(): Unit = {
+   CirceJacksonTest.decode()
   }
 
   @Benchmark
-  def circleJackson(): Unit = {
-    CirceJacksonTest.decode()
+  def circeJackson(): Unit = {
+   CirceJacksonTest.decode()
   }
 
   @Benchmark
-  def jacksonRead(): Unit = {
-    JacksonTest.read()
+  def circeJacksonAuto(): Unit = {
+    CirceJacksonTest.decodeAuto()
   }
 
   @Benchmark
   def jacksonDecode(): Unit = {
-    JacksonTest.read()
+   JacksonTest.decode()
   }
 
   @Benchmark
   def sprayDecode(): Unit = {
-    SprayJsonTest.decode()
-  }
-
-  @Benchmark
-  def sprayInvalidDecode(): Unit = {
-    SprayJsonTest.invalidDecode()
+   SprayJsonTest.decode()
   }
 
   @Benchmark
@@ -40,12 +35,7 @@ class DecodeTest {
   }
 
   @Benchmark
-  def argonautInvalidDecode(): Unit = {
-    ArgonautTest.decodeInvalid()
-  }
-
-  @Benchmark
-  def argonautValDecode(): Unit = {
-    ArgonautTest.decodeVal()
+  def argonautShapelessDecode(): Unit = {
+    ArgonautShapelessTest.decode()
   }
 }

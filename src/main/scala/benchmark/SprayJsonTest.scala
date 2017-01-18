@@ -15,7 +15,7 @@ object SprayJsonTest {
 
   import MyJsonProtocol._
 
-  def decode(): Unit = {
+  def decode(): Data.Type = {
     Data.json.parseJson.convertTo[Data.Type]
   }
 

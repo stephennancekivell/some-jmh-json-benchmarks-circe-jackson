@@ -7,8 +7,11 @@ version := "1.0-SNAPSHOT"
 libraryDependencies ++= Seq(
 	"com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.8.4",
 	"com.fasterxml.jackson.core" % "jackson-core" % "2.8.5",
-	"io.argonaut" %% "argonaut" % "6.2-RC2",
-	"io.spray" %%  "spray-json" % "1.3.3",
+	//"io.argonaut" %% "argonaut" % "6.1",
+  //"com.github.alexarchambault" %% "argonaut-shapeless_6.1" % "1.1.0",
+  "io.argonaut" %% "argonaut" % "6.1a",
+  "com.github.alexarchambault" %% "argonaut-shapeless_6.1" % "1.1.1",
+  "io.spray" %%  "spray-json" % "1.3.3",
   "org.scalactic" %% "scalactic" % "3.0.1",
   "org.scalatest" %% "scalatest" % "3.0.1" % "test"
 )

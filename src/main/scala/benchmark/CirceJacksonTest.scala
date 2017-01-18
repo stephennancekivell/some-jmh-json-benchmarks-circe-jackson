@@ -1,6 +1,10 @@
 package benchmark
 
-import io.circe._, io.circe.generic.auto._, io.circe.jackson, io.circe.syntax._
+import benchmark.Data.Type
+import io.circe._
+import io.circe.generic.auto._
+import io.circe.jackson
+import io.circe.syntax._
 
 object CirceJacksonTest {
 
@@ -8,7 +12,12 @@ object CirceJacksonTest {
     val doc = jackson.parse(Data.json)
   }
 
-  def decode(): Unit = {
+  private val decoder = implicitly[Decoder[Data.Type]]
+  def decode(): Either[Error, Type] = {
+    jackson.decode[Data.Type](Data.json)(decoder)
+  }
+
+  def decodeAuto(): Either[Error, Type] = {
     jackson.decode[Data.Type](Data.json)
   }
 
